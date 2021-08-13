@@ -1,0 +1,138 @@
+:root {
+  font-size: calc(1vw + 0.5em);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+}
+
+h1 {
+  font-weight: 200;
+  color: hsl(234, 12%, 34%);
+}
+
+.second {
+  font-weight: 400;
+}
+
+h3 {
+  font-weight: 200;
+  color: hsl(229, 6%, 66%);
+}
+
+h2 {
+  color: hsl(234, 12%, 34%);
+}
+
+p {
+  color: hsl(229, 6%, 66%);
+}
+
+header {
+  text-align: center;
+  margin: 4em 1em;
+}
+h1 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+}
+.each-card {
+  flex: 1;
+  padding: 2.5em 2em;
+  background-color: white;
+  margin: 2em 1.5em;
+  border-radius: 0.4em;
+  box-shadow: 11px 10px 39px -13px rgba(76, 78, 97, 0.35);
+  -webkit-box-shadow: 11px 10px 39px -13px rgba(76, 78, 97, 0.35);
+  -moz-box-shadow: 11px 10px 39px -13px rgba(76, 78, 97, 0.35);
+}
+
+.image {
+  text-align: right;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p {
+  margin-top: 0;
+}
+
+.cards > :nth-child(1) {
+  border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+.half-card > :nth-child(1) {
+  border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.half-card > :nth-child(2) {
+  border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.cards > :nth-child(3) {
+  border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+@media (min-width: 48em) {
+  h1 {
+    font-size: 1.5em;
+  }
+  h3 {
+    font-size: 0.8em;
+  }
+  h2 {
+    font-size: 0.9em;
+  }
+
+  p {
+    font-size: 0.7em;
+  }
+
+  .container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  header {
+    /* flex: 1; */
+    width: 50%;
+    margin: 1em auto 0 auto;
+  }
+
+  .cards {
+    /* flex: 1; */
+    padding: 0 1.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .each-card {
+    padding: 1em;
+    flex: 1;
+  }
+
+  .half-card {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
